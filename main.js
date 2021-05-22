@@ -21,4 +21,19 @@ const animate = function () {
     renderer.render(scene, camera);
 };
 
+function redShape() {
+    console.log("red")
+    cube.material.color.setHex(0xff0000); // there is also setHSV and setRGB
+}
+
+function greenShape() {
+    console.log("green")
+    cube.material.color.setHex(0x00ff00); // there is also setHSV and setRGB
+}
+
+function blueShape() {
+    console.log("blue")
+    cube.material.color.setHex(0x0000ff); // there is also setHSV and setRGB
+}
+
 animate();
