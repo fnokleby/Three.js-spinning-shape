@@ -1,0 +1,27 @@
+body {
+    font-family: Georgia, Arial, Helvetica, Sans-serif, serif;
+    color: #000;
+    background: #fff;
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -ms-transform: translatex(-50%);
+    transform: translatex(-50%);
+}
