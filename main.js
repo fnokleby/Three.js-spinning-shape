@@ -12,14 +12,24 @@ scene.add(cube); //This adds the cube to the scene
 
 camera.position.z = 5; // How close the camera is to the cube
 
-const animate = function () {
+const animate = function () { //infinite loop
     requestAnimationFrame(animate);
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-
     renderer.render(scene, camera);
+
+    /* -----------------------------------------------------------------------------------------------------*/
+    let speed = document.getElementById("speedSlider").value; //Get value of speed slider when it is released
+
+
+    let speedFloat = speed / 1000;
+
+    cube.rotation.x += speedFloat;
+    cube.rotation.y += speedFloat;
+     /* --------------------------*/
+
+
 };
+
 
 function redShape() {
     console.log("red")
@@ -35,5 +45,7 @@ function blueShape() {
     console.log("blue")
     cube.material.color.setHex(0x0000ff); // there is also setHSV and setRGB
 }
+
+
 
 animate();

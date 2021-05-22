@@ -7,6 +7,7 @@ body {
 
 p {
     font-size: 15px;
+    color: #fff;
 }
 
 .container {
@@ -19,6 +20,18 @@ p {
     margin: 0;
     position: absolute;
     top: 90%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -ms-transform: translatex(-50%);
+    transform: translatex(-50%);
+}
+
+.vertical-center-top {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 5%;
     left: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
